@@ -7,10 +7,25 @@ Webpack, at its core, is a code bundler. It takes your code, transforms and bund
 Where Webpack really shines is you're able to tell it every transformation your code needs to make, and it will do them and output a bundle file for you full of those changes (and some other helpful things as well like minification if you desire).
 
 #What Webpack needs to know:
-1) Webpack needs to know the starting point of your application, or your root JavaScript file.
+1) Webpack needs to know the starting point of your application, or your root JavaScript file.(entry)
 
-2) Webpack needs to know which transformations to make on your code.
+2) Webpack needs to know which transformations to make on your code. (loaders)
 
 3) Webpack needs to know to which location it should save the new transformed code.
 
 -This needs to be listed in webpack.config.js file
+
+
+#html-webpack-plugin
+Plugin that use original html file as a template and creates a brand new index.html file. Keeps you from having to copy transformed index.html file from dist folder into index.html in app folder
+
+-run npm install --save-dev html-webpack-plugin before you can use it
+
+#Running Webpack
+If you've installed webpack globally (by running npm install -g webpack) then you have access to the webpack CLI.
+
+-run webpack from your terminal and that will do a one time run through of your webpack settings.
+
+-run webpack -w and that will watch your files and re-execute webpack whenever any of the files Webpack is concerned about changes.
+
+-if you're wanting to ship to production, you can run webpack -p and that will run through the normal transformations as well as minify your code.
