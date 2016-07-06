@@ -17,9 +17,14 @@ Using declarative code is more readable, has less bugs, reduces side effects, an
 
 React has explicit mutations using this.setState
 
-React Router - allows you to map components to URL activating them.
+React Router - allows you to map components to be active when you are at different URLs.
 
 <Router history={hashHistory}>
   <Route path = '/' component={Main}>
     <IndexRoute component={Home} />
     <Route path='playerOne' header='Player One' component={PromptContainer} />
+    <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer}/>
+    <Route path='battle' component={ConfirmBattleContainer} />
+    <Route path='results' component={ResultsContainer} />
+  </Route>
+</Router>
