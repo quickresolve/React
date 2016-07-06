@@ -51,3 +51,7 @@ Allows you to make HTTP requests using promises.
 -React Components can be composed just like functions can be composed.
 -React is not strictly typed.
 -Webpack has become the most popular tool in the React Community.
+
+
+#Modules
+Modules allow us to avoid namespace pollution by creating a private space for our variables.
