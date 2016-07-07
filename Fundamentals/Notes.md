@@ -1,6 +1,6 @@
-##Notes on React.js Fundamentals
+#Notes on React.js Fundamentals
 
-#Imperative code
+##Imperative code
 You tell the computer how to do something
 
 var numbers = [4,2,3,6]
@@ -9,7 +9,7 @@ for (var i =0; i < numbers.length; i++){
   total += numbers[i]
 }
 
-#Declarative code
+##Declarative code
 You tell the computer what you want it to do.
 
 var numbers = [4,2,3,6]
@@ -23,7 +23,7 @@ React has explicit mutations using this.setState
 
 
 
-#React Router
+##React Router
 allows you to map components to be active when you are at different URLs.
 
 <Router history={hashHistory}>
@@ -36,16 +36,16 @@ allows you to map components to be active when you are at different URLs.
   </Route>
 </Router>
 
-#WebPack
+##WebPack
 Webpack bundles all of your code into one file for you. Then runs it through loaders that transform it and outputs it based on your instructions.
 
-#Babel
+##Babel
  Converts JSX into JS - code transformation.
 
-#Axios
+##Axios
 Allows you to make HTTP requests using promises.
 
-#Quiz 1
+##Quiz 1
 
 -React is not technically declarative.
 -React Components can be composed just like functions can be composed.
@@ -53,7 +53,7 @@ Allows you to make HTTP requests using promises.
 -Webpack has become the most popular tool in the React Community.
 
 
-#Modules
+##Modules
 Modules allow us to avoid namespace pollution by creating a private space for our variables.
 
 The Module pattern is used to mimic the concept of classes (since JavaScript doesn’t natively support classes) so that we can store both public and private methods and variables inside a single object 
