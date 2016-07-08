@@ -10,7 +10,7 @@ for (var i =0; i < numbers.length; i++){
 }
 
 ##Declarative code
-You tell the computer what you want it to do.
+You tell the computer what sfdyou want it to do.
 
 var numbers = [4,2,3,6]
 numbers.reduce(function(previous, current) {
