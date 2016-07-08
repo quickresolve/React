@@ -82,3 +82,12 @@ ex: slice vs splice
   -Slice is a pure function because given the same arguments, it will always return the same value. Slice makes a copy of the original array and only modifies the copy.
 
   -Splice is not a pure function because it modifies state and so will return a different value even when given the same arguments.
+
+
+##FIRST - Acronym to Test React Components Against
+
+F - Focused
+I - Idependent
+R - Reusable
+S - Small
+T - Testable
