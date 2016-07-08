@@ -53,4 +53,32 @@ Signal to notify our app some data has changed→ Re-render virtual DOM -> Diff 
 -Webpack loaders allow you to preprocess files as you require() or "load" them
 
 
+##Nested Components
 
+Props are to components what arguments are to functions - used to pass down data to those child React components.
+  *calling this.props.attribute_name will allow you access to the attribute from a parent component
+
+
+-Using the map function on list items:
+  map creates a new array, calls our callback function on each item in the array, and fills the new array with the result of calling the callback function on each item.
+
+
+##Building UIs w/Pure Functions and Function Composition
+
+When you create new react components instead of your function taking in some arguments and returning a value, your function is going to take in some arguments and return some UI.
+
+                      f(d)=V
+A Function takes in some Data and returns a View.
+
+Pure functions are consistent and predictable because they have the following characteristics:
+
+- Pure functions always return the same result given the same arguments.
+- Pure function's execution doesn't depend on the state of the application.
+- Pure functions don't modify the variables outside of their scope.
+
+
+ex: slice vs splice
+
+  -Slice is a pure function because given the same arguments, it will always return the same value. Slice makes a copy of the original array and only modifies the copy.
+
+  -Splice is not a pure function because it modifies state and so will return a different value even when given the same arguments.
