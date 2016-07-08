@@ -105,3 +105,10 @@ Characteristics of pure functions include:
 
 You should treat props to a component as immutable.
 
+##this.props.children
+
+In React, use this.props.children to access anything between opening and closing elements.
+
+this.props.children could return a single component if there is only one or an array of components if there are multiple.
+
+
