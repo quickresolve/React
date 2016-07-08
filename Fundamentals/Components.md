@@ -91,3 +91,17 @@ I - Idependent
 R - Reusable
 S - Small
 T - Testable
+
+
+##Quiz Notes
+
+Characteristics of pure functions include:
+-Doesn't depend on variables outside of its scope
+-Doesn't modify variables outside of its scope
+-Doesn't make AJAX requests
+-Doesn't manipulate the DOM
+-Can contain other function invocations
+
+
+You should treat props to a component as immutable.
+
