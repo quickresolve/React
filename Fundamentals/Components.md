@@ -39,3 +39,18 @@ var HelloWorld = React.createClass({
 ##Updating the DOM
 
 Signal to notify our app some data has changed→ Re-render virtual DOM -> Diff previous virtual DOM with new virtual DOM -> Only update real DOM with necessary changes.
+
+##Quiz Notes
+
+-You make a new React Component by calling React.createClass()
+
+-The method for rending a react component to the DOM is ReactDOM.render()
+
+-The ReactDOM.render() method takes two arguments
+  *First is the class you want to render
+  *Second is place you want it to render to (which element to inject it in)
+
+-Webpack loaders allow you to preprocess files as you require() or "load" them
+
+
+
