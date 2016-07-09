@@ -57,3 +57,10 @@ Allows you to make HTTP requests using promises.
 Modules allow us to avoid namespace pollution by creating a private space for our variables.
 
 The Module pattern is used to mimic the concept of classes (since JavaScript doesn’t natively support classes) so that we can store both public and private methods and variables inside a single object 
+
+
+**Notes to Self
+ Things to look into:
+ context, higher order components, decorators & react utils
+
+ Change or update to a large number of nodes is optimized using batching and change detection techniques.
