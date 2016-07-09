@@ -112,3 +112,42 @@ In React, use this.props.children to access anything between opening and closing
 this.props.children could return a single component if there is only one or an array of components if there are multiple.
 
 
+##Stateless Functional Components
+
+Stateless functional components that simply take in some data via props and output some UI.
+
+
+Seperate your components into container components and presentational components. Presentational components optionally take in some data and render a view.
+
+ex:
+function HelloWorld(props) {
+  return(
+    <div>Hello {props.name}</div>
+  )
+}
+ReactDOM.render(<HelloWorld name='Jane'/>, document.getElementById('app'))
+
+
+-Stateless functional components do not support shouldComponentUpdate()
+
+
+##PropTypes
+
+Used to validate the type of props that are passed to components.
+
+ex:
+var React = require('react')
+var PropTypes = React.PropTypes
+var Icon = React.createClass({
+  propTypes: {
+    name: PropTypes.string.isRequired,
+    size: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    style: PropTypes.object
+  },
+  render: ...
+});
+
+If the size property comes in as a string rather than an integer, we're going to get an error in the console.
+
+note: To use PropTypes with functions the API is propTypes.func rather than propTypes.function. Also to use booleans, the API is propTypes.bool not propTypes.boolean.

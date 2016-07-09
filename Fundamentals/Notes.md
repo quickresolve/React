@@ -61,6 +61,6 @@ The Module pattern is used to mimic the concept of classes (since JavaScript doe
 
 **Notes to Self
  Things to look into:
- context or higher order components or decorators or react utils
+ context, higher order components, decorators & react utils
 
  Change or update to a large number of nodes is optimized using batching and change detection techniques.
