@@ -15,6 +15,6 @@ var routes = (
       <Route path='/home' component={Home}/>
     </Route>
   </Router>
-)
+);
 
-module.exports routes;
+module.exports = routes;
