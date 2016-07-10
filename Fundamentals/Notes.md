@@ -65,4 +65,4 @@ The Module pattern is used to mimic the concept of classes (since JavaScript doe
 
  Change or update to a large number of nodes is optimized using batching and change detection techniques.
 
- Main paradigm of React is to create components and pass props down to components.
+ Main paradigm of React is to create components and pass props down to components - does not work well with router, so context is useful here.
