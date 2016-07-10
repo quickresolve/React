@@ -11,17 +11,17 @@ var Main = require('../components/Main');
 var Home = require('../components/Home');
 var PromptContainer = require('../containers/PromptContainer');
 var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
-var ResultsContainer = require('/containers/ResultsContainer');
+var ResultsContainer = require('../containers/ResultsContainer');
 
 var routes = (
   <Router history={hashHistory}>
-    <Route path='/' component={Main}>
+    <Route path='/' component={Main} />
       <IndexRoute component={Home}/>
-      <Route path='playerOne'/> component={PromptContainer}/>
-      <Route path='playerTwo/:playerOne'/> component={PromptContainer}/>
+      <Route path='playerOne' header='Player One' component={PromptContainer}/>
+      <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer}/>
       // Here we are passing a route parameter
-       <Route path='battle'/> component={ConfirmBattleContainer}/>
-      <Route path='results'/> component={ResultsContainer}/>
+       <Route path='battle' component={ConfirmBattleContainer}/>
+      <Route path='results' component={ResultsContainer}/>
     </Route>
   </Router>
 );

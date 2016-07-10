@@ -5,3 +5,6 @@ React Router gives us a declarative way to express routes in our app, mapping ce
 ##Steps
 -npm install --save react-router
 
+
+*In order to do dynamic routing you need to grab router from prop types (context)
+
