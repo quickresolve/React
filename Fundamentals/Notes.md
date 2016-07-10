@@ -146,3 +146,35 @@ var me = {
 }
 
 sayAge();
+
+
+##Reduce
+Often in programming you'll need to take a list of things and convert that into just one item - whether an integer, an object, or another array.
+
+.reduce takes in two values, a callback function and an initial value.
+
+If you want the end result to be an object (therefore converting an array into an object), have the initialValue be an object and add properties to that object as you go.
+
+ex:
+var votes = [
+  'tacos',
+  'pizza',
+  'pizza',
+  'tacos',
+  'fries',
+  'ice cream',
+  'ice cream',
+  'pizza'
+]
+var initialValue = {}
+var reducer = function(tally, vote) {
+  if (!tally[vote]) {
+    tally[vote] = 1;
+  } else {
+    tally[vote] = tally[vote] + 1;
+  }
+  return tally;
+}
+var result = votes.reduce(reducer, initialValue) // {tacos: 2, pizza: 3, fries: 1, ice cream: 2}
+
+Here's an example of how you would do that below. You have an array of foods and you want to transform that to an object whose keys are the food itself and whose values are how many votes that food received.
