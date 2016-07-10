@@ -151,3 +151,6 @@ var Icon = React.createClass({
 If the size property comes in as a string rather than an integer, we're going to get an error in the console.
 
 note: To use PropTypes with functions the API is propTypes.func rather than propTypes.function. Also to use booleans, the API is propTypes.bool not propTypes.boolean.
+
+
+
