@@ -12,21 +12,23 @@ export default class Layout extends React.Component {
     super();
     this.state = {title: "Welcome!"};
   }
+  changeTitle(title) {
+    this.setState({title});
+  }
   render() {
     // var list = [
     // <Header />,
     // <Footer />,
     // ];
-    setTimeout(() => {
-      this.setState({title: "Welcome Bob!"});
-    }, 1000);
+    // setTimeout(() => {
+    //   this.setState({title: "Welcome Bob!"});
+    // }, 1000);
     return (
       <div>
-        <Header title={this.state.title} />
-
+        <Header
+          changeTitle={this.changeTitle.bind(this)}
+          title={this.state.title} />
         <Footer />
-        // {this.state.name};
-        // {list};
       </div>
       // <h1>It's  {this.name}!</h1>
     );
