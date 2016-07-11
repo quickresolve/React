@@ -19,8 +19,25 @@ numbers.reduce(function(previous, current) {
 
 Using declarative code is more readable, has less bugs, reduces side effects, and minimizes mutability.
 
-React has explicit mutations using this.setState
+##State
+Only gets used if component has internal value that is affected.
 
+React has explicit mutations using this.setState method.
+
+this.state === null; (by default)
+
+
+##Props
+Used to pass values or object between components.
+
+this.props
+
+##Event Handling
+Set up change listeners whenever you are dynamically updating values.
+
+-onChange={this.handleChange.bind(this)}
+-onClick
+-onBlur
 
 
 ##React Router
@@ -66,6 +83,7 @@ The Module pattern is used to mimic the concept of classes (since JavaScript doe
  Change or update to a large number of nodes is optimized using batching and change detection techniques.
 
  Main paradigm of React is to create components and pass props down to components - does not work well with router, so context is useful here.
+
 
  ##This Keyword
 
