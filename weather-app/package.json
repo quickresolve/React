@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
     "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.22.0"
   }
 }
