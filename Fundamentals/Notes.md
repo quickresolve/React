@@ -19,7 +19,12 @@ numbers.reduce(function(previous, current) {
 
 Using declarative code is more readable, has less bugs, reduces side effects, and minimizes mutability.
 
+##State
+
 React has explicit mutations using this.setState
+
+this.state === null; (by default)
+
 
 
 

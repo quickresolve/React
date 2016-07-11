@@ -8,10 +8,10 @@ export default class Layout extends React.Component {
   // getVal(){
   //   return "Will";
   // }
-  // constructor(){
-  //   super();
-  //   this.name = "Will";
-  // }
+  constructor(){
+    super();
+    this.state = {name: "Laura"};
+  }
   render() {
     var list = [
     <Header />,
@@ -19,7 +19,8 @@ export default class Layout extends React.Component {
     ];
     return (
       <div>
-        {list}
+        {this.state.name};
+        {list};
       </div>
       // <h1>It's  {this.name}!</h1>
     );
