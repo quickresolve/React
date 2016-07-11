@@ -1,5 +1,8 @@
 import React from "react";
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 export default class Layout extends React.Component {
   // const name = "Will";
   // getVal(){
@@ -12,8 +15,7 @@ export default class Layout extends React.Component {
   render() {
     var list = [
     <Header />,
-    <Header />,
-    <Header />,
+    <Footer />,
     ];
     return (
       <div>
