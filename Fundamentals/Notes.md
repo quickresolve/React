@@ -1,5 +1,8 @@
 #Notes on React.js Fundamentals
 
+npm init
+npm install -S react react-dom
+
 ##Imperative code
 You tell the computer how to do something
 
