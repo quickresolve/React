@@ -21,7 +21,7 @@ Using declarative code is more readable, has less bugs, reduces side effects, an
 
 ##State
 
-React has explicit mutations using this.setState
+React has explicit mutations using this.setState method.
 
 this.state === null; (by default)
 
