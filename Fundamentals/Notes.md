@@ -178,3 +178,7 @@ var reducer = function(tally, vote) {
 var result = votes.reduce(reducer, initialValue) // {tacos: 2, pizza: 3, fries: 1, ice cream: 2}
 
 Here's an example of how you would do that below. You have an array of foods and you want to transform that to an object whose keys are the food itself and whose values are how many votes that food received.
+
+##getDefaultProps
+
+ getDefaultProps allows you to, as you guessed, specify what the default props will be in a component if those specific props aren't specified when the component is invoked.

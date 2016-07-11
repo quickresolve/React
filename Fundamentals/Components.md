@@ -130,6 +130,7 @@ ReactDOM.render(<HelloWorld name='Jane'/>, document.getElementById('app'))
 
 -Stateless functional components do not support shouldComponentUpdate()
 
+-A benefit of private functional components is that they do not use the this keyword.
 
 ##PropTypes
 
