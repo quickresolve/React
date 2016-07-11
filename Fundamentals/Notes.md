@@ -33,8 +33,9 @@ Used to pass values or object between components.
 this.props
 
 ##Event Handling
+Set up change listeners whenever you are dynamically updating values.
 
--onChange
+-onChange={this.handleChange.bind(this)}
 -onClick
 -onBlur
 
