@@ -32,6 +32,11 @@ Used to pass values or object between components.
 
 this.props
 
+##Event Handling
+
+-onChange
+-onClick
+-onBlur
 
 
 ##React Router
