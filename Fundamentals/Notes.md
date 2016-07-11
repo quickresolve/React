@@ -182,3 +182,7 @@ Here's an example of how you would do that below. You have an array of foods and
 ##getDefaultProps
 
  getDefaultProps allows you to, as you guessed, specify what the default props will be in a component if those specific props aren't specified when the component is invoked.
+
+ ##React.cloneElement
+
+ There are times when you'll need to clone a React element and attach new props to it.
