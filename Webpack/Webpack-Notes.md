@@ -53,6 +53,11 @@ If you've installed webpack globally (by running npm install -g webpack) then yo
   var _ = require('lodash');
 
 
+*Script for Package.json to run dev server:
+
+"dev": "./node_modules/.bin/webpack-dev-server --content-base app --inline --hot",
+
+
 ex webpack.config.js template:
 
 var debug = process.env.NODE_ENV !== "production";
@@ -62,6 +67,18 @@ module.exports = {
   context: __dirname + './app',
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/scripts.js",
+   module: {
+    loaders: [
+      {test: /\.js$/,
+      exclude: /node_modules|bower_components/,
+      loader: "babel-loader",
+      query: {
+        presets: ['react', 'es2015', 'stage-0'],
+        plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy']
+        }
+      }
+    ]
+  },
   output: {
     path: __dirname + "/js",
     filename: "scripts.min.js"

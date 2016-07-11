@@ -4,7 +4,7 @@
 A great tool for compiling your JS. With webpack you tell it which transformations to make on your code, while Babel is the specific transformation itself. Babel allows you to transform JSX into JS. You can also use it to transform future versions of JS.
 
 ##Installation
-run npm install --save-dev babel-core babel-loader babel-preset-react
+run npm install --save-dev babel-core babel-loader babel-preset-react babel-preset-stage-0 babel-plugin-add-module-exports babel-plugin-react-html-attrs babel-plugin-transform-decorators-legacy babel-preset-es2015
 
 - babel-core is babel itself, babel-loader is the webpack loader we'll use, and babel-preset-react is to get the JSX -> JS transformation going.
 
