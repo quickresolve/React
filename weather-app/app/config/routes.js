@@ -1,19 +1,19 @@
 import React from "react";
-import ReactRouter from "react-router";
-import Router from ReactRouter.Router;
-import Route from ReactRouter.Route;
-import IndexRoute from ReactRouter.IndexRoute;
-import hashHistory from ReactRouter.hashHistory;
+import {Router, Route, IndexRoute, hashHistory} from "react-router";
+
 
 import Layout from "../components/Layout.js";
 import Home from "../components/Home.js";
 
-var routes = (
-  <Router history={hashHistory}>
-    <Route path='/' component={Layout} />
-      <IndexRoute component={Home}/>
-    </Route>
-  </Router>
-);
+export default class Routes extends React.Component{
+  render(){
+    return(
+      <Router history={hashHistory}>
+        <Route path='/' component={Layout} />
+          <IndexRoute component={Home}/>
+        </Route>
+      </Router>
+    );
+  }
+}
 
-module.exports = routes;
